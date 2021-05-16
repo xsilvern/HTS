@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import { ChangeEvent, KeyboardEvent, useState } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import Button from "./Button";
+import Title from "./Title";
+import Text from "./Text";
+import Adult from "./Adult";
+import Photo from "./Photo";
+import Counter from "./Counter";
+import Adder from "./Adder";
+import WelcomeName from "./WelcomeName";
+import ConditionalText from "./ConditionalText";
+import HiddenName from "./HiddenName";
+import Test from "./pages/Test";
+const App = () => {
+  const [latestName, setLatesName] = useState("");
+  const updateLatestName = (name: string) => {
+    setLatesName(name);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Test />
+    </>
   );
-}
+};
 
 export default App;
