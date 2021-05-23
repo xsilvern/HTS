@@ -1,6 +1,6 @@
 import { ChangeEvent, KeyboardEvent, useState } from "react";
 import Pad from "./Pad";
-import Button from "../../../Button";
+
 const Calculator = () => {
   const [currentNumber, updateCurrentNumber] = useState("");
   const updateCal = (name: string) => {};
@@ -25,7 +25,7 @@ const Calculator = () => {
       <Pad keyName="/" callBack={updateCal} />
       <Pad keyName="=" callBack={updateCal} />
       <br />
-      <input type="text" value={sum} />
+      <input type="text" value={currentNumber} />
     </>
   );
 };
