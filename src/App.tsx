@@ -11,7 +11,7 @@ import Adder from "./Adder";
 import WelcomeName from "./WelcomeName";
 import ConditionalText from "./ConditionalText";
 import HiddenName from "./HiddenName";
-import Test from "./pages/Test";
+import Trade from "./pages/Trade";
 const App = () => {
   const [latestName, setLatesName] = useState("");
   const updateLatestName = (name: string) => {
@@ -19,7 +19,7 @@ const App = () => {
   };
   return (
     <>
-      <Test />
+      <Trade />
     </>
   );
 };
